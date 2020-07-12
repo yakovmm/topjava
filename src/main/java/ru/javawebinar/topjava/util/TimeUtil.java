@@ -8,7 +8,6 @@ public class TimeUtil {
     }
 
     public static boolean isBetween(LocalTime time, LocalTime startTime, LocalTime endTime) {
-//        TODO develop this method
-        return false;
+        return time.isAfter(startTime) && time.isBefore(endTime);
     }
 }
